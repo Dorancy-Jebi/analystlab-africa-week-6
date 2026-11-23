@@ -1,0 +1,10 @@
+KPI,Definition / method,Caveat
+Daily price change,"Close(t)-Close(t-1), by symbol",Absolute move; raw price levels vary.
+Daily percentage return,Close(t)/Close(t-1)-1,Scale-free historical close-to-close change; not dividend adjusted.
+Daily range,High-Low,Intraday spread; missing inputs remain missing.
+20/50-day average,Simple mean over current and prior 19/49 closes,Full window required; descriptive only.
+Mean daily return,Mean of valid daily returns,"Historical average, outlier sensitive."
+Daily volatility,Sample standard deviation of returns,Historical dispersion.
+Annualized volatility,Daily sample SD times sqrt(252),Trading-session convention; not forecast.
+Mean volume,Mean shares traded daily,Not transaction value or revenue.
+Common-period return,Last common-date close / first common-date close - 1,Selected stocks use shared dates; excludes dividends.
